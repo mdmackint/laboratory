@@ -10,3 +10,7 @@ Go to kaiete.github.io/laboratory/?***put your html here*** (maybe **kaiete.gith
 **Error 404**
 
 There are no more steps. Yes, that's it.
+
+## Warnings
+* Laboratory doesn't support CSS, JavaScript or anything that isn't HTML.
+* You *can't* use the following symbols in the query string: + =
