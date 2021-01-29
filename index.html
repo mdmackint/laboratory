@@ -2,7 +2,8 @@
 <script>
   const plainparams = new URLSearchParams(window.location.search);
   var decodedParams = decodeURIComponent(plainparams)
-  var fullEditedParams = decodedParams.replace("+"," ")
+  var partEditedParams = decodedParams.replace("+"," ")
+  var fullEditedParams = partEditedParams.replace("=","")
   document.getElementById("htmlBody").innerHTML = fullEditedParams
   if (fullEditedParams == "") {
     document.getElementById("htmlBody").innerHTML = "<h1>There doesn't seem to be anything here.</h1><br><p>Make sure you put in the query string correctly.</p>"
