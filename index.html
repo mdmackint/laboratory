@@ -1,11 +1,8 @@
 <script>
   const plainparams = new URLSearchParams(window.location.search);
-  var plainparamlength = plainparams.length - 1
-  var parteditedparams = plainparams.substr(4, plainparamlength);
-  var fulleditedparams = decodeURIComponent(parteditedparams);
-  document.getElementById("htmlBody").innerHTML = fulleditedparams
+  document.getElementById("htmlBody").innerHTML = plainparams
 </script>
 <body id="htmlBody"></body>
 <footer style="align-items: center; text-align: center;">
-<p style="position: absolute; bottom: 5px; text-align: center; font-family: sans-serif;">Previewed with kaiete/laboratory. <a href="https://github.com/kaiete/laboratory/" target="_blank">Share me!</a></p>
+<p style="position: absolute; bottom: 5px; text-align: center; font-family: sans-serif;">Previewed with kaiete/laboratory. (Ignore the html=) <a href="https://github.com/kaiete/laboratory/" target="_blank">Share me!</a></p>
 </footer>
