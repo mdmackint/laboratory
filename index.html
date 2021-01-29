@@ -4,6 +4,9 @@
   var decodedParams = decodeURIComponent(plainparams)
   var fullEditedParams = decodedParams.replace("+"," ")
   document.getElementById("htmlBody").innerHTML = fullEditedParams
+  if (fullEditedParams == "") {
+    document.getElementById("htmlBody").innerHTML = "<h1>There doesn't seem to be anything here.</h1><br><p>Make sure you put in the query string correctly.</p>"
+  }
 </script>
 <body>
 <p style="position: absolute; bottom: 5px; text-align: center; font-family: sans-serif;">Previewed with kaiete/laboratory. <b>Laboratory does <em>not</em> support JavaScript or CSS, just native HTML. </b><a href="https://github.com/kaiete/laboratory/" target="_blank">Share me!</a></p>
