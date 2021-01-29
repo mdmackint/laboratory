@@ -1,7 +1,8 @@
 <script>
-  var plainparams = new URLSearchParams(window.location.search)
-  var parteditedparams = plainparams.substr(4,plainparams.length - 1)
-  var fulleditedparams = decodeURIComponent(parteditedparams)
+  var plainparams = new URLSearchParams(window.location.search);
+  var plainparamlength = plainparams.length - 1
+  var parteditedparams = plainparams.substr(4, plainparamlength);
+  var fulleditedparams = decodeURIComponent(parteditedparams);
   document.getElementById("htmlBody").innerHTML = fulleditedparams
 </script>
 <body id="htmlBody"></body>
