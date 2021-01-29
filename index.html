@@ -1,6 +1,5 @@
 <script>
-  const plainparams = new URLSearchParams(window.location.search);
-  document.getElementById("htmlBody").innerHTML = plainparams
+  document.getElementById("htmlBody").innerHTML = new URLSearchParams(window.location.search)
 </script>
 <body id="htmlBody">
 
