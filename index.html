@@ -1,0 +1,8 @@
+<script>
+  var plainparams = new URLSearchParams(window.location.search)
+  var editedparams = plainparams.substr(4,plainparams.length - 1)
+  document.getElementById("htmlBody").innerHTML = editedparams
+</script>
+<body id="htmlBody"></body>
+<p style="position: absolute; bottom: 5px; text-align: center; font-family: sans-serif;>Previewed with kaiete/laboratory. <a href="https://github.com/kaiete/laboratory/" target="_blank">Share me!</a></p>
+  
