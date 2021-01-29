@@ -1,5 +1,5 @@
 <script>
-  var plainparams = new URLSearchParams(window.location.search);
+  const plainparams = new URLSearchParams(window.location.search);
   var plainparamlength = plainparams.length - 1
   var parteditedparams = plainparams.substr(4, plainparamlength);
   var fulleditedparams = decodeURIComponent(parteditedparams);
