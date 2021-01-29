@@ -1,7 +1,8 @@
 <script>
   var plainparams = new URLSearchParams(window.location.search)
-  var editedparams = plainparams.substr(4,plainparams.length - 1)
-  document.getElementById("htmlBody").innerHTML = editedparams
+  var parteditedparams = plainparams.substr(4,plainparams.length - 1)
+  var fulleditedparams = decodeURIComponent(parteditedparams)
+  document.getElementById("htmlBody").innerHTML = fulleditedparams
 </script>
 <body id="htmlBody"></body>
 <footer style="align-items: center; text-align: center;">
