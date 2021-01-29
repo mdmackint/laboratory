@@ -1,9 +1,8 @@
 <script>
-  document.getElementById("htmlBody").innerHTML = new URLSearchParams.get("html")
+  const plainparams = new URLSearchParams(window.location.search);
+  document.getElementById("htmlBody").innerHTML = plainparams
 </script>
-<body id="htmlBody">
-
+<body>
+<p style="position: absolute; bottom: 5px; text-align: center; font-family: sans-serif;">Previewed with kaiete/laboratory. <a href="https://github.com/kaiete/laboratory/" target="_blank">Share me!</a></p>
 </body>
-<footer style="align-items: center; text-align: center;">
-<p style="position: absolute; bottom: 5px; text-align: center; font-family: sans-serif;">Previewed with kaiete/laboratory. (Ignore the html=) <a href="https://github.com/kaiete/laboratory/" target="_blank">Share me!</a></p>
-</footer>
+<head id="htmlBody"></head>
