@@ -16,3 +16,4 @@ There are no more steps. Yes, that's it.
 * You *can't* use the following symbols in the query string: +
 * If you use the domain laboratory.k.vu to attempt going to Laboratory, this will work however ***do not*** type in https:// at the beginning, use http:// instead.
 This is because the certificate is given to github.com not laboratory.k.vu so your browser will most likely block the page from loading.
+* For some reason, instead of putting in \<p style="font-family: sans-serif;">example\</p> you will have to put \<p style="font-family:sans-serif;">example\</p>.
