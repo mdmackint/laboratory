@@ -1,10 +1,11 @@
 <script>
-  function openHTML()
+  function openHTML() {
   const params = new URLSearchParams(location.search)
   const editedparams = decodeURIComponent(params)
   var code = open()
   code.document.open()
   code.document.write(editedparams)
   code.document.close()
+  }
 </script>
 <button onclick="openHTML()">Load HTML</button>
