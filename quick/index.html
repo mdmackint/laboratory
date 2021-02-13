@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body style="text-align: center; align-items: center;">
+    <script>
+      function addHTMLln() {
+        var htmlToAdd = prompt("Please enter 1 line of HTML to add - no <html>, <body> or <!doctype html> needed. It will go into <body>, so no <title>, <meta> or anything else that needs to be in <head>. This will open in a new tab - you can come back here and keep adding.")
+        var new_window = open()
+        new_window.document.writeln(htmlToAdd)
+      }
+      function execJS() {
+        var JSToRun = prompt("Please enter 1 line of JS to run. This will open in a new tab - you can come back here and keep adding.")
+        var newJS_Window = open()
+        newJS_Window.document.writeln(`<script>eval(` + JSToRun + ')</script>')
+      }
+    </script>
+    <button onclick="addHTMLln()">HTML</button>
+    <button onclick="execJS()">JavaScript</button>
+  </body>
+</html>
