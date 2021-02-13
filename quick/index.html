@@ -10,7 +10,7 @@
       function execJS() {
         var JSToRun = prompt("Please enter 1 line of JS to run. This will open in a new tab - you can come back here and keep adding.")
         var newJS_Window = open()
-        newJS_Window.document.writeln(`<script>eval(` + JSToRun + ')</script>')
+        newJS_Window.document.writeln(`<script>eval(` + JSToRun + ')' + '<' + '/script' + '>')
       }
     </script>
     <button onclick="addHTMLln()">HTML</button>
